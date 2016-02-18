@@ -1,0 +1,30 @@
+{% set flavor_name = flavor_name or "b.tiny" %}
+{
+    "NovaServers.boot_and_delete_server": [
+        {
+            "args": {
+                "nics": [{"net-id": "94864377-5713-4782-8d89-df945bf8f581"}],
+                "flavor": {
+                    "name": "{{flavor_name}}"
+                },
+                "image": {
+                    "name": "cirros"
+                },
+                "force_delete": false
+            },
+            "runner": {
+                "type": "constant",
+                "times": 10,
+                "concurrency": 2
+            },
+            "context": {
+                "users": {
+                    "tenants": 3,
+                    "users_per_tenant": 2,
+                    "project_domain": "16472d760afe44879cbb9638656ce38c",
+                    "user_domain": "16472d760afe44879cbb9638656ce38c",
+                },
+            }
+        }
+    ]
+}
