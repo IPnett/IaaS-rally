@@ -7,6 +7,8 @@
             name: "{{flavor_name}}"
         image:
             name: "^cirros.*uec$"
+        nics:
+            - net-id: "{{network_id}}"
         security_group_count: 10
         rules_per_security_group: 10
       runner:

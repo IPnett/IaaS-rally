@@ -7,6 +7,8 @@
             name: "{{flavor_name}}"
         image:
             name: "^cirros.*uec$"
+        nics:
+            - net-id: "{{network_id}}"
         force_delete: false
       runner:
         type: "constant"

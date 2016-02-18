@@ -4,6 +4,8 @@ NovaServers.boot_and_rebuild_server:
 - args:
     flavor:
       name: "{{flavor_name}}"
+    nics:
+      - net-id: "{{network_id}}"
     from_image:
       name: "^cirros.*uec$"
     to_image:

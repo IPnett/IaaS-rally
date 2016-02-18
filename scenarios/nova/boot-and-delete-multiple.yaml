@@ -7,6 +7,8 @@
           name: "^cirros.*uec$"
         flavor:
           name: "{{flavor_name}}"
+        nics:
+            - net-id: "{{network_id}}"
         count: 5
       runner:
         type: "constant"
