@@ -1,5 +1,4 @@
 {% set flavor_name = flavor_name or "b.tiny" %}
-{% set network_id = "1eca2aef-795c-404b-8d4c-7119b24bf275" %}
 ---
   NovaServers.boot_and_delete_server:
     -
