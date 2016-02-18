@@ -1,7 +1,3 @@
-scenarios/nova/shelve-and-unshelve.yaml
-scenarios/nova/suspend-and-resume.yaml
-scenarios/nova/boot-lock-unlock-and-delete.yaml
-scenarios/nova/boot-snapshot-boot-delete.yaml
 scenarios/nova/boot-and-associate-floating-ip.yaml
 scenarios/nova/boot-and-block-migrate.yaml
 scenarios/nova/boot-server-attach-created-volume-and-live-migrate.yaml

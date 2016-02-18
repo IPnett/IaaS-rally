@@ -53,3 +53,7 @@ scenarios/nova/boot-from-volume-and-delete.yaml
 #scenarios/nova/boot-from-volume-and-resize.yaml
 scenarios/nova/boot-from-volume.yaml
 scenarios/nova/pause-and-unpause.yaml
+scenarios/nova/shelve-and-unshelve.yaml
+scenarios/nova/suspend-and-resume.yaml
+scenarios/nova/boot-lock-unlock-and-delete.yaml
+scenarios/nova/boot-snapshot-boot-delete.yaml
