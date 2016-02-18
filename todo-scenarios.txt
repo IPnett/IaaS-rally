@@ -1,14 +1,3 @@
-scenarios/nova/boot-and-associate-floating-ip.yaml
-scenarios/nova/boot-and-block-migrate.yaml
-scenarios/nova/boot-server-attach-created-volume-and-live-migrate.yaml
-scenarios/nova/boot-server-attach-created-volume-and-resize.yaml
-scenarios/nova/boot-server-from-volume-and-live-migrate.yaml
-scenarios/nova/create-and-delete-floating-ips-bulk.yaml
-scenarios/nova/create-and-delete-network.yaml
-scenarios/nova/create-and-list-floating-ips-bulk.yaml
-scenarios/nova/create-and-list-networks.yaml
-scenarios/nova/resize-server.yaml
-
 scenarios/neutron/create_and_delete_floating_ips.yaml
 scenarios/neutron/create_and_delete_healthmonitors.yaml
 scenarios/neutron/create_and_delete_networks.yaml

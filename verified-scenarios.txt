@@ -57,3 +57,13 @@ scenarios/nova/shelve-and-unshelve.yaml
 scenarios/nova/suspend-and-resume.yaml
 scenarios/nova/boot-lock-unlock-and-delete.yaml
 scenarios/nova/boot-snapshot-boot-delete.yaml
+scenarios/nova/boot-and-associate-floating-ip.yaml
+scenarios/nova/create-and-delete-floating-ips-bulk.yaml
+scenarios/nova/create-and-delete-network.yaml
+scenarios/nova/create-and-list-floating-ips-bulk.yaml
+scenarios/nova/create-and-list-networks.yaml
+#scenarios/nova/resize-server.yaml
+#scenarios/nova/boot-and-block-migrate.yaml
+#scenarios/nova/boot-server-attach-created-volume-and-live-migrate.yaml
+#scenarios/nova/boot-server-attach-created-volume-and-resize.yaml
+#scenarios/nova/boot-server-from-volume-and-live-migrate.yaml
