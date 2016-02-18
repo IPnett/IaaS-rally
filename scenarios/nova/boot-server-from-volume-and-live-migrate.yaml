@@ -6,6 +6,8 @@ NovaServers.boot_server_from_volume_and_live_migrate:
       name: "{{flavor_name}}"
     image:
       name: "^cirros.*uec$"
+    nics:
+      - net-id: "{{network_id}}"
     block_migration: false
     volume_size: 10
     force_delete: false

@@ -7,6 +7,8 @@
             name: "{{flavor_name}}"
         image:
             name: "^cirros.*uec$"
+        nics:
+            - net-id: "{{network_id}}"
         to_flavor:
             name: "m1.small"
         confirm: true
