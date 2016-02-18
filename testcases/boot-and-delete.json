@@ -3,12 +3,12 @@
     "NovaServers.boot_and_delete_server": [
         {
             "args": {
-                "nics": [{"net-id": "94864377-5713-4782-8d89-df945bf8f581"}],
+                "nics": [{"net-id": "9cd8289d-cc25-4a86-a712-e497dee81d8b"}],
                 "flavor": {
                     "name": "{{flavor_name}}"
                 },
                 "image": {
-                    "name": "cirros"
+                    "name": "^cirros.*uec$"
                 },
                 "force_delete": false
             },
