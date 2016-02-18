@@ -11,9 +11,12 @@ DEPLOYMENT=	se-lab
 
 all:
 
-setup-virtualenv:
+create-virtualenv:
 	cd $(HOME); curl https://raw.githubusercontent.com/openstack/rally/master/install_rally.sh | bash
 	install -m 444 $(CACERT) $(RALLY)/lib/python2.7/site-packages/requests/cacert.pem
+
+destroy-virtualenv:
+	rm -fr $(RALLY)
 
 create:
 	#install -m 444 rally.conf.template $(RALLY_CONF)
