@@ -25,3 +25,7 @@ scenarios/glance/create-and-delete-image.yaml
 scenarios/glance/create-and-list-image.yaml
 scenarios/glance/create-image-and-boot-instances.yaml
 scenarios/glance/list_images.yaml
+scenarios/nova/list-flavors.yaml
+scenarios/nova/list-hypervisors.yaml
+scenarios/nova/list-images.yaml
+scenarios/nova/list-servers.yaml
