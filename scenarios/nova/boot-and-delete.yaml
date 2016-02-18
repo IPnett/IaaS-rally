@@ -8,7 +8,7 @@
         image:
             name: "^cirros.*uec$"
         nics:
-            - net-id: 94864377-5713-4782-8d89-df945bf8f581
+            - net-id: 9cd8289d-cc25-4a86-a712-e497dee81d8b
         force_delete: false
       runner:
         type: "constant"
