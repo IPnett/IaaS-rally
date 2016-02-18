@@ -1,4 +1,5 @@
 {% set flavor_name = flavor_name or "b.tiny" %}
+{% set network_id = "1eca2aef-795c-404b-8d4c-7119b24bf275" %}
 ---
   GlanceImages.create_image_and_boot_instances:
     -
@@ -8,6 +9,8 @@
         disk_format: "qcow2"
         flavor:
             name: "{{flavor_name}}"
+        nics:
+            - net-id: "{{network_id}}"
         number_instances: 2
       runner:
         type: "constant"
