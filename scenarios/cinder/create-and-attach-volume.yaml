@@ -1,5 +1,6 @@
 {% set flavor_name = flavor_name or "b.tiny" %}
-{% set availability_zone = availability_zone or "nova" %}
+{% set availability_zone = availability_zone or "se-lab" %}
+{% set network_id = "1eca2aef-795c-404b-8d4c-7119b24bf275" %}
 ---
   CinderVolumes.create_and_attach_volume:
     -
@@ -9,6 +10,8 @@
             name: "^cirros.*uec$"
           flavor:
             name: "{{flavor_name}}"
+          nics:
+              - net-id: "{{network_id}}"
           create_volume_params:
             availability_zone: "{{availability_zone}}"
       runner:
