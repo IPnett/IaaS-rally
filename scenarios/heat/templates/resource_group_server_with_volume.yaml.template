@@ -24,7 +24,7 @@ parameters:
   instance_flavor:
     type: string
     description: Type of the instance to be created.
-    default: m1.tiny
+    default: b.tiny
   instance_availability_zone:
     type: string
     description: The Availability Zone to launch the instance.

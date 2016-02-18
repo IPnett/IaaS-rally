@@ -7,7 +7,7 @@ parameters:
     default: cirros-0.3.4-x86_64-uec
   flavor:
     type: string
-    default: m1.tiny
+    default: b.tiny
   availability_zone:
     type: string
     description: The Availability Zone to launch the instance.

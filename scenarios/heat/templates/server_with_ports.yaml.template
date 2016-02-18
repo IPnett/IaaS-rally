@@ -10,7 +10,7 @@ parameters:
     default: cirros-0.3.4-x86_64-uec
   flavor:
     type: string
-    default: m1.tiny
+    default: b.tiny
   cidr:
     type: string
     default: 11.11.11.0/24
