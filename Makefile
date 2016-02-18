@@ -13,7 +13,7 @@ all:
 
 create-virtualenv:
 	cd $(HOME); curl https://raw.githubusercontent.com/openstack/rally/master/install_rally.sh | bash
-	install -m 444 $(CACERT) $(RALLY)/lib/python2.7/site-packages/requests/cacert.pem
+	#install -m 444 $(CACERT) $(RALLY)/lib/python2.7/site-packages/requests/cacert.pem
 
 destroy-virtualenv:
 	rm -fr $(RALLY)
@@ -30,4 +30,5 @@ clean:
 
 realclean:
 	rm -f $(RALLY_DB)
+	rm -fr $(HOME)/.rally
 	rally-manage db create
