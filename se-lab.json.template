@@ -1,0 +1,16 @@
+{
+    "type": "ExistingCloud",
+    "auth_url": "https://keystone.api.lab.cloud.ipnett.se/v3",
+    "region_name": "se-east-1",
+    "endpoint_type": "public",
+    "admin": {
+        "username": "rally",
+        "password": "XXX",
+        "user_domain_name": "rally.cloud.ipnett.se",
+        "admin_domain_name": "rally.cloud.ipnett.se",
+        "project_name": "rally.cloud.ipnett.se",
+        "project_domain_name": "rally.cloud.ipnett.se"
+    },
+    "https_insecure": false,
+    "https_cacert": "/etc/pki/ca-trust/source/anchors/ipnett.pem"
+}
