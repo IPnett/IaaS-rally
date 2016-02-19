@@ -149,29 +149,29 @@ scenarios/neutron/create_and_update_subnets.yaml
 
 ## Ceilometer
 #
-##scenarios/ceilometer/all-list-meters.yaml
-##scenarios/ceilometer/all-list-resources.yaml
-##scenarios/ceilometer/create-alarm-and-get-history.yaml
-##scenarios/ceilometer/create-alarm.yaml
-##scenarios/ceilometer/create-and-delete-alarm.yaml
-##scenarios/ceilometer/create-and-list-alarm.yaml
-##scenarios/ceilometer/create-and-query-alarm-history.yaml
-##scenarios/ceilometer/create-and-query-alarms.yaml
-##scenarios/ceilometer/create-and-query-samples.yaml
-##scenarios/ceilometer/create-and-update-alarm.yaml
-##scenarios/ceilometer/create-meter-and-get-stats.yaml
-##scenarios/ceilometer/create_user_and_get_event.yaml
-##scenarios/ceilometer/create_user_and_list_event_types.yaml
-##scenarios/ceilometer/create_user_and_list_events.yaml
-##scenarios/ceilometer/create_user_and_list_trait_descriptions.yaml
-##scenarios/ceilometer/create_user_and_list_traits.yaml
-##scenarios/ceilometer/get-stats.yaml
-##scenarios/ceilometer/get-tenant-resources.yaml
-##scenarios/ceilometer/list-alarms.yaml
-##scenarios/ceilometer/list-matched-samples.yaml
-##scenarios/ceilometer/list-meters.yaml
-##scenarios/ceilometer/list-resources.yaml
-##scenarios/ceilometer/list-samples.yaml
+scenarios/ceilometer/all-list-meters.yaml
+scenarios/ceilometer/all-list-resources.yaml
+scenarios/ceilometer/create-alarm-and-get-history.yaml
+scenarios/ceilometer/create-alarm.yaml
+scenarios/ceilometer/create-and-delete-alarm.yaml
+scenarios/ceilometer/create-and-list-alarm.yaml
+scenarios/ceilometer/create-and-query-alarm-history.yaml
+scenarios/ceilometer/create-and-query-alarms.yaml
+scenarios/ceilometer/create-and-query-samples.yaml
+scenarios/ceilometer/create-and-update-alarm.yaml
+scenarios/ceilometer/create-meter-and-get-stats.yaml
+scenarios/ceilometer/create_user_and_get_event.yaml
+scenarios/ceilometer/create_user_and_list_event_types.yaml
+scenarios/ceilometer/create_user_and_list_events.yaml
+scenarios/ceilometer/create_user_and_list_trait_descriptions.yaml
+scenarios/ceilometer/create_user_and_list_traits.yaml
+scenarios/ceilometer/get-stats.yaml
+scenarios/ceilometer/get-tenant-resources.yaml
+scenarios/ceilometer/list-alarms.yaml
+scenarios/ceilometer/list-matched-samples.yaml
+scenarios/ceilometer/list-meters.yaml
+scenarios/ceilometer/list-resources.yaml
+scenarios/ceilometer/list-samples.yaml
 
 ## Heat
 #
