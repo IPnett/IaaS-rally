@@ -20,7 +20,7 @@ run_task() {
 	fi
 }
 
-TASKNAME=`echo $TASK | sed -e s,scenarios/,, -e s,/,_,g -e s,.yaml,,`
 FILENAME=$1
+TASKNAME=`echo $FILENAME | sed -e s,scenarios/,, -e s,/,_,g -e s,.yaml,,`
 
 run_task $TASKNAME $FILENAME
