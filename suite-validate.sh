@@ -7,7 +7,7 @@ validate_task() {
 	TASKNAME=$1
 	FILENAME=$2
 	
-	rally task validate --task-args-file $ARGS $FILENAME 2>/dev/null 
+	rally task validate --task-args-file $ARGS $FILENAME
 }
 
 for suite in $@; do
