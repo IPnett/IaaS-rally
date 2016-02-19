@@ -2,7 +2,7 @@
   HeatStacks.create_and_delete_stack:
     -
       args:
-        template_path: "templates/default.yaml.template"
+        template_path: "{{heat_template_path}}/default.yaml.template"
       runner:
         type: "constant"
         times: 10
