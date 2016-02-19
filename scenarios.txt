@@ -16,7 +16,9 @@ scenarios/quotas/neutron-update.yaml
 scenarios/quotas/nova-update-and-delete.yaml
 scenarios/quotas/nova-update.yaml
 
-## not testing keystone yet, as we do most things federated
+## Keystone
+#
+# N.B: not testing keystone yet, as we do most things federated
 #
 #scenarios/keystone/add_and_remove_user_role.yaml
 #scenarios/keystone/create-and-delete-ec2credential.yaml
@@ -135,6 +137,8 @@ scenarios/cinder/modify-volume-metadata.yaml
 ##scenarios/neutron/create_and_update_subnets.yaml
 ##scenarios/neutron/create_and_update_vips.yaml
 
+## Ceilometer
+#
 ##scenarios/ceilometer/all-list-meters.yaml
 ##scenarios/ceilometer/all-list-resources.yaml
 ##scenarios/ceilometer/create-alarm-and-get-history.yaml
@@ -159,6 +163,8 @@ scenarios/cinder/modify-volume-metadata.yaml
 ##scenarios/ceilometer/list-resources.yaml
 ##scenarios/ceilometer/list-samples.yaml
 
+## Heat
+#
 ##scenarios/heat/create-and-delete-stack.yaml
 ##scenarios/heat/create-and-delete-stack_resource_group.yaml
 ##scenarios/heat/create-and-delete-stack_with_neutron.yaml
