@@ -12,7 +12,7 @@
           nics:
               - net-id: "{{network_id}}"
           create_volume_params:
-            availability_zone: "{{availability_zone}}"
+            availability_zone: "{{cinder_availability_zone}}"
       runner:
         type: "constant"
         times: 5
@@ -31,7 +31,7 @@
         image:
             name: "{{image_name}}"
         create_volume_params:
-            availability_zone: "{{availability_zone}}"
+            availability_zone: "{{cinder_availability_zone}}"
       runner:
         type: "constant"
         times: 5
