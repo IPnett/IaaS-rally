@@ -1,0 +1,5 @@
+---
+flavor_name: b.tiny
+availability_zone: se-lab
+network_id: 1eca2aef-795c-404b-8d4c-7119b24bf275
+image_name: "^cirros.*uec$"
