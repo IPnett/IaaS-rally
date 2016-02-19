@@ -74,10 +74,12 @@ scenarios/nova/suspend-and-resume.yaml
 scenarios/nova/boot-lock-unlock-and-delete.yaml
 scenarios/nova/boot-snapshot-boot-delete.yaml
 scenarios/nova/boot-and-associate-floating-ip.yaml
-scenarios/nova/create-and-delete-floating-ips-bulk.yaml
-scenarios/nova/create-and-delete-network.yaml
-scenarios/nova/create-and-list-floating-ips-bulk.yaml
-scenarios/nova/create-and-list-networks.yaml
+#
+# broken?
+#scenarios/nova/create-and-delete-floating-ips-bulk.yaml
+#scenarios/nova/create-and-list-floating-ips-bulk.yaml
+#scenarios/nova/create-and-delete-network.yaml
+#scenarios/nova/create-and-list-networks.yaml
 #
 # resizing migration not yet successful
 #scenarios/nova/resize-server.yaml
