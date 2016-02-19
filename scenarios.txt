@@ -118,32 +118,34 @@ scenarios/cinder/modify-volume-metadata.yaml
 
 ## Neutron
 #
-##scenarios/neutron/create_and_delete_floating_ips.yaml
-##scenarios/neutron/create_and_delete_healthmonitors.yaml
-##scenarios/neutron/create_and_delete_networks.yaml
-##scenarios/neutron/create_and_delete_pools.yaml
-##scenarios/neutron/create_and_delete_ports.yaml
-##scenarios/neutron/create_and_delete_routers.yaml
-##scenarios/neutron/create_and_delete_security_groups.yaml
-##scenarios/neutron/create_and_delete_subnets.yaml
-##scenarios/neutron/create_and_delete_vips.yaml
-##scenarios/neutron/create_and_list_floating_ips.yaml
-##scenarios/neutron/create_and_list_healthmonitors.yaml
-##scenarios/neutron/create_and_list_networks.yaml
-##scenarios/neutron/create_and_list_pools.yaml
-##scenarios/neutron/create_and_list_ports.yaml
-##scenarios/neutron/create_and_list_routers.yaml
-##scenarios/neutron/create_and_list_security_groups.yaml
-##scenarios/neutron/create_and_list_subnets.yaml
-##scenarios/neutron/create_and_list_vips.yaml
-##scenarios/neutron/create_and_update_healthmonitors.yaml
-##scenarios/neutron/create_and_update_networks.yaml
-##scenarios/neutron/create_and_update_pools.yaml
-##scenarios/neutron/create_and_update_ports.yaml
-##scenarios/neutron/create_and_update_routers.yaml
-##scenarios/neutron/create_and_update_security_groups.yaml
-##scenarios/neutron/create_and_update_subnets.yaml
-##scenarios/neutron/create_and_update_vips.yaml
+scenarios/neutron/create_and_delete_networks.yaml
+scenarios/neutron/create_and_delete_ports.yaml
+scenarios/neutron/create_and_delete_routers.yaml
+scenarios/neutron/create_and_delete_security_groups.yaml
+scenarios/neutron/create_and_delete_subnets.yaml
+scenarios/neutron/create_and_list_networks.yaml
+scenarios/neutron/create_and_list_ports.yaml
+scenarios/neutron/create_and_list_routers.yaml
+scenarios/neutron/create_and_list_security_groups.yaml
+scenarios/neutron/create_and_list_subnets.yaml
+scenarios/neutron/create_and_update_networks.yaml
+scenarios/neutron/create_and_update_ports.yaml
+scenarios/neutron/create_and_update_routers.yaml
+scenarios/neutron/create_and_update_security_groups.yaml
+scenarios/neutron/create_and_update_subnets.yaml
+#
+# unsuccessful tasks
+#scenarios/neutron/create_and_list_vips.yaml
+#scenarios/neutron/create_and_update_vips.yaml
+#scenarios/neutron/create_and_delete_vips.yaml
+#scenarios/neutron/create_and_delete_floating_ips.yaml
+#scenarios/neutron/create_and_delete_healthmonitors.yaml
+#scenarios/neutron/create_and_list_floating_ips.yaml
+#scenarios/neutron/create_and_list_healthmonitors.yaml
+#scenarios/neutron/create_and_update_healthmonitors.yaml
+#scenarios/neutron/create_and_list_pools.yaml
+#scenarios/neutron/create_and_delete_pools.yaml
+#scenarios/neutron/create_and_update_pools.yaml
 
 ## Ceilometer
 #
