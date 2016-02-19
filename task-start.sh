@@ -12,6 +12,11 @@ run_task() {
 	HTML_REPORT=${WEBROOT}/${TIMESTAMP}_${TASKNAME}.html
 	JUNIT_REPORT=${WEBROOT}/${TIMESTAMP}_${TASKNAME}.xml
 
+	#rally task validate --task-args-file $ARGS $FILENAME 2>/dev/null 
+	#if [ $? -ne 0 ]; then
+	#	exit 1
+	#fi
+
 	rally task start --task-args-file $ARGS $FILENAME 2>/dev/null
 
 	if [ $? -eq 0 ]; then
