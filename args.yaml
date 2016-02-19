@@ -3,3 +3,4 @@ flavor_name: b.tiny
 availability_zone: se-lab
 network_id: 1eca2aef-795c-404b-8d4c-7119b24bf275
 image_name: "^cirros.*uec$"
+image_location: "http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img"
