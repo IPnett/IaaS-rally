@@ -9,7 +9,7 @@
         nics:
             - net-id: "{{network_id}}"
         to_flavor:
-            name: "{{2nd_flavor_name}}"
+            name: "{{flavor_name_2}}"
         confirm: true
         force_delete: false
       runner:
