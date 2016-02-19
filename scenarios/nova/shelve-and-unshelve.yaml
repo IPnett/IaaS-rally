@@ -1,4 +1,3 @@
-{% set flavor_name = flavor_name or "b.tiny" %}
 ---
   NovaServers.shelve_and_unshelve_server:
     -

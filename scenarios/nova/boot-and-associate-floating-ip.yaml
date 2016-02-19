@@ -1,4 +1,3 @@
-{% set flavor_name = flavor_name or "b.tiny" %}
 ---
   NovaServers.boot_and_associate_floating_ip:
     -
