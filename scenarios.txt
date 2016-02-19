@@ -59,8 +59,8 @@ scenarios/nova/create-and-delete-secgroups.yaml
 scenarios/nova/create-and-update-secgroups.yaml
 scenarios/nova/boot.yaml
 scenarios/nova/boot-and-delete-multiple.yaml
-#scenarios/nova/boot-and-delete-server-with-keypairs.yaml
-#scenarios/nova/boot-and-delete-server-with-secgroups.yaml
+scenarios/nova/boot-and-delete-server-with-keypairs.yaml
+scenarios/nova/boot-and-delete-server-with-secgroups.yaml
 scenarios/nova/boot-bounce-delete.yaml
 scenarios/nova/boot-and-get-console-server.yaml
 scenarios/nova/boot-and-list.yaml
