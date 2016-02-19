@@ -7,9 +7,9 @@ NovaServers.boot_and_rebuild_server:
     nics:
       - net-id: "{{network_id}}"
     from_image:
-      name: "^cirros.*uec$"
+      name: "{{image_name}}"
     to_image:
-      name: "^cirros.*uec$"
+      name: "{{image_name}}"
   runner:
     type: "constant"
     times: 5

@@ -4,7 +4,7 @@
     -
       args:
         image:
-          name: "^cirros.*uec$"
+          name: "{{image_name}}"
         flavor:
           name: "{{flavor_name}}"
         nics:

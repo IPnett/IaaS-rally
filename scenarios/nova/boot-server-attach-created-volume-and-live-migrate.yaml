@@ -5,7 +5,7 @@ NovaServers.boot_server_attach_created_volume_and_live_migrate:
     flavor:
       name: "{{flavor_name}}"
     image:
-      name: "^cirros.*uec$"
+      name: "{{image_name}}"
     nics:
       - net-id: "{{network_id}}"
     size: 10

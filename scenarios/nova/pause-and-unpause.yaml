@@ -6,7 +6,7 @@
         flavor:
             name: "{{flavor_name}}"
         image:
-            name: "^cirros.*uec$"
+            name: "{{image_name}}"
         nics:
             - net-id: "{{network_id}}"
         force_delete: false
