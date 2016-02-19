@@ -108,7 +108,7 @@ scenarios/cinder/create-and-upload-volume-to-image.yaml
 scenarios/cinder/create-from-image-and-delete-volume.yaml
 scenarios/cinder/create-from-volume-and-delete-volume.yaml
 scenarios/cinder/create-volume.yaml
-scenarios/cinder/create_nested_snapshots_and_attach_volume.yaml
+#scenarios/cinder/create_nested_snapshots_and_attach_volume.yaml
 scenarios/cinder/list-volumes.yaml
 scenarios/cinder/modify-volume-metadata.yaml
 #
