@@ -20,6 +20,8 @@
         servers:
           image:
             name: "{{image_name}}"
+          nics:
+            - net-id: "{{network_id}}"
           flavor:
             name: "{{flavor_name}}"
           servers_per_tenant: 2

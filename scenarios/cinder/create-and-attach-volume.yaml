@@ -30,6 +30,8 @@
             name: "{{flavor_name}}"
         image:
             name: "{{image_name}}"
+        nics:
+            - net-id: "{{network_id}}"
         create_volume_params:
             availability_zone: "{{availability_zone}}"
       runner:

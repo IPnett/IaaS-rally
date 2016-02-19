@@ -20,6 +20,8 @@
             name: "{{image_name}}"
           flavor:
             name: "{{flavor_name}}"
+          nics:
+            - net-id: "{{network_id}}"
           servers_per_tenant: 2
     -
       args:
@@ -40,5 +42,7 @@
             name: "{{image_name}}"
           flavor:
             name: "{{flavor_name}}"
+          nics:
+            - net-id: "{{network_id}}"
           servers_per_tenant: 2
 
