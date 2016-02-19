@@ -18,6 +18,8 @@ run_task() {
 	if [ $? -eq 0 ]; then
 		rally task report --html-static --out $HTML_REPORT
 		#rally task report --junit --out $JUNIT_REPORT
+	else
+		echo "No report generated, task unsuccessful."
 	fi
 }
 
