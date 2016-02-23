@@ -2,8 +2,6 @@
 
 . $HOME/rally/bin/activate
 
-export PYTHONWARNINGS="ignore:Unverified HTTPS request"
-
 SUITES=""
 SUITES="$SUITES authenticate"
 #SUITES="$SUITES keystone"

@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export PYTHONWARNINGS="ignore:Unverified HTTPS request"
+
 WEBROOT=/var/www/html
 TIMESTAMP=`date +%Y%m%d_%H%M%S`
 ARCHIVE=${WEBROOT}/archive/`date +%Y%m%d`
