@@ -1,5 +1,7 @@
 #!/bin/sh
 
+. $HOME/rally/bin/activate
+
 export PYTHONWARNINGS="ignore:Unverified HTTPS request"
 
 WEBROOT=/var/www/html

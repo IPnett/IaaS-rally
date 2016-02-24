@@ -1,7 +1,5 @@
 #!/bin/sh
 
-. $HOME/rally/bin/activate
-
 SUITES=""
 SUITES="$SUITES authenticate"
 #SUITES="$SUITES keystone"
