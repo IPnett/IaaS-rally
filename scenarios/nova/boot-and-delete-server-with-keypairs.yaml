@@ -6,8 +6,6 @@
             name: "{{flavor_name}}"
         image:
             name: "{{image_name}}"
-        nics:
-            - net-id: "{{network_id}}"
       runner:
         type: "constant"
         times: 5
