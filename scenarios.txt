@@ -133,7 +133,7 @@ scenarios/neutron/create_and_list_routers.yaml
 scenarios/neutron/create_and_list_security_groups.yaml
 scenarios/neutron/create_and_list_subnets.yaml
 scenarios/neutron/create_and_update_networks.yaml
-scenarios/neutron/create_and_update_ports.yaml
+#scenarios/neutron/create_and_update_ports.yaml
 scenarios/neutron/create_and_update_routers.yaml
 scenarios/neutron/create_and_update_security_groups.yaml
 scenarios/neutron/create_and_update_subnets.yaml
