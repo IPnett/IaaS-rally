@@ -10,12 +10,12 @@
       runner:
         type: "constant"
         times: 30
-        concurrency: 10
+        concurrency: 1
       context:
         network: {}
         users:
-          tenants: 3
-          users_per_tenant: 3
+          tenants: 2
+          users_per_tenant: 2
         quotas:
           neutron:
             network: -1

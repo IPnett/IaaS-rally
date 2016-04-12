@@ -12,7 +12,7 @@
       context:
         network: {}
         users:
-          tenants: 3
+          tenants: 1
           users_per_tenant: 3
         quotas:
           neutron:
