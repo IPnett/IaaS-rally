@@ -3,6 +3,8 @@
     -
       args:
         detailed: True
+        nics:
+           - net-id: "{{network_id}}"
       runner:
         type: "constant"
         times: 1
@@ -16,4 +18,5 @@
               name: "{{flavor_name}}"
           image:
               name: "{{image_name}}"
+          auto_assign_nic: True
           servers_per_tenant: 2

@@ -2,7 +2,7 @@
 flavor_name: b.tiny
 flavor_name_2: b.small
 availability_zone: se-lab-1
-network_id: ee73ba96-ef13-4742-ab65-1275d115a8a7
+network_id: 66b62786-3cf6-4c8e-a844-255440042f3c
 image_name: "^cirros.*uec$"
 image_location: "http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img"
 heat_template_path: "scenarios/heat/templates"

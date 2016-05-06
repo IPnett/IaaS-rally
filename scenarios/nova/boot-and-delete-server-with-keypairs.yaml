@@ -6,6 +6,8 @@
             name: "{{flavor_name}}"
         image:
             name: "{{image_name}}"
+        boot_server_kwargs:
+            auto_assign_nic: True
       runner:
         type: "constant"
         times: 5
