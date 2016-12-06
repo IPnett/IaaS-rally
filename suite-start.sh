@@ -17,7 +17,7 @@ run_task() {
 	
 	REPORT=${ARCHIVE}/${TIMESTAMP}_${TASKNAME}.html
 
-	rally task start --task-args-file $ARGS $FILENAME
+	rally -d task start --task-args-file $ARGS $FILENAME
 
 	if [ $? -eq 0 ]; then
 		rally task report --html-static --out ${REPORT}

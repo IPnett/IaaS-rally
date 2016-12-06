@@ -1,0 +1,16 @@
+{
+    "type": "ExistingCloud",
+    "auth_url": "https://keystone.DOMAIN/v3",
+    "region_name": "REGION",
+    "endpoint_type": "public",
+    "admin": {
+        "username": "USER",
+        "password": "PASSWORD",
+        "user_domain_name": "USER_DOMAIN",
+        "admin_domain_name": "ADMIN_DOMAIN",
+        "project_name": "PROJECT",
+        "project_domain_name": "PROJECT_DOMAIN"
+    },
+    "https_insecure": false,
+    "https_cacert": "/etc/pki/ca-trust/source/anchors/ipnett.pem"
+}

@@ -1,0 +1,60 @@
+Quotas.cinder_update_and_delete:
+- args:
+    max_quota: 1024
+  context:
+    users:
+      tenants: 3
+      users_per_tenant: 2
+  runner:
+    concurrency: 2
+    times: 10
+    type: constant
+
+Quotas.cinder_update:
+- args:
+    max_quota: 1024
+  context:
+    users:
+      tenants: 3
+      users_per_tenant: 2
+  runner:
+    concurrency: 2
+    times: 10
+    type: constant
+
+Quotas.neutron_update:
+- args:
+    max_quota: 1024
+  context:
+    users:
+      tenants: 3
+      users_per_tenant: 2
+  runner:
+    concurrency: 2
+    times: 10
+    type: constant
+
+Quotas.nova_update_and_delete:
+- args:
+    max_quota: 1024
+  context:
+    users:
+      tenants: 3
+      users_per_tenant: 2
+  runner:
+    concurrency: 2
+    times: 10
+    type: constant
+
+Quotas.nova_update:
+- args:
+    max_quota: 1024
+  context:
+    users:
+      tenants: 3
+      users_per_tenant: 2
+  runner:
+    concurrency: 2
+    times: 10
+    type: constant
+

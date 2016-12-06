@@ -4,15 +4,15 @@
       args:
         network_create_args: {}
         port_create_args: {}
-        ports_per_network: 10
+        ports_per_network: 1
       runner:
         type: "constant"
-        times: 100
-        concurrency: 10
+        times: 1
+        concurrency: 1
       context:
         network: {}
         users:
-          tenants: 10
+          tenants: 1
           users_per_tenant: 1
         quotas:
           neutron:

@@ -1,0 +1,491 @@
+CeilometerMeters.list_meters:
+- args:
+    limit: 50
+    metadata_query:
+      status: terminated
+  context:
+    ceilometer:
+      counter_name: benchmark_meter
+      counter_type: gauge
+      counter_unit: '%'
+      counter_volume: 100
+      metadata_list:
+      - deleted: 'false'
+        name: rally benchmark on
+        status: active
+      - deleted: 'true'
+        name: rally benchmark off
+        status: terminated
+      resources_per_tenant: 100
+      samples_per_resource: 100
+      timestamp_interval: 10
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+CeilometerResource.list_resources:
+- args:
+    limit: 50
+    metadata_query:
+      status: terminated
+  context:
+    ceilometer:
+      counter_name: benchmark_meter
+      counter_type: gauge
+      counter_unit: '%'
+      counter_volume: 100
+      metadata_list:
+      - deleted: 'false'
+        name: rally benchmark on
+        status: active
+      - deleted: 'true'
+        name: rally benchmark off
+        status: terminated
+      resources_per_tenant: 100
+      samples_per_resource: 100
+      timestamp_interval: 10
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+CeilometerAlarms.create_alarm_and_get_history:
+- args:
+    alarm_actions:
+    - http://localhost:8776/alarm
+    insufficient_data_actions:
+    - http://localhost:8776/notok
+    meter_name: ram_util
+    ok_actions:
+    - http://localhost:8776/ok
+    state: ok
+    statistic: avg
+    threshold: 10.0
+    type: threshold
+  context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 5
+    times: 10
+    type: constant
+
+CeilometerAlarms.create_alarm:
+- args:
+    alarm_actions:
+    - http://localhost:8776/alarm
+    insufficient_data_actions:
+    - http://localhost:8776/notok
+    meter_name: ram_util
+    ok_actions:
+    - http://localhost:8776/ok
+    statistic: avg
+    threshold: 10.0
+    type: threshold
+  context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+CeilometerAlarms.create_and_delete_alarm:
+- args:
+    alarm_actions:
+    - http://localhost:8776/alarm
+    insufficient_data_actions:
+    - http://localhost:8776/notok
+    meter_name: ram_util
+    ok_actions:
+    - http://localhost:8776/ok
+    statistic: avg
+    threshold: 10.0
+    type: threshold
+  context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+CeilometerAlarms.create_and_list_alarm:
+- args:
+    alarm_actions:
+    - http://localhost:8776/alarm
+    insufficient_data_actions:
+    - http://localhost:8776/notok
+    meter_name: ram_util
+    ok_actions:
+    - http://localhost:8776/ok
+    statistic: avg
+    threshold: 10.0
+    type: threshold
+  context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+CeilometerQueries.create_and_query_alarm_history:
+- args:
+    alarm_actions:
+    - http://localhost:8776/alarm
+    insufficient_data_actions:
+    - http://localhost:8776/notok
+    limit: null
+    meter_name: ram_util
+    ok_actions:
+    - http://localhost:8776/ok
+    orderby: null
+    statistic: avg
+    threshold: 10.0
+    type: threshold
+  context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 10
+    times: 100
+    type: constant
+
+CeilometerQueries.create_and_query_alarms:
+- args:
+    alarm_actions:
+    - http://localhost:8776/alarm
+    filter:
+      and:
+      - '!=':
+          state: dummy_state
+      - '=':
+          type: threshold
+    insufficient_data_actions:
+    - http://localhost:8776/notok
+    limit: 10
+    meter_name: ram_util
+    ok_actions:
+    - http://localhost:8776/ok
+    orderby: null
+    statistic: avg
+    threshold: 10.0
+    type: threshold
+  context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 10
+    times: 100
+    type: constant
+
+CeilometerQueries.create_and_query_samples:
+- args:
+    counter_name: cpu_util
+    counter_type: gauge
+    counter_unit: instance
+    counter_volume: 1.0
+    filter:
+      '=':
+        counter_unit: instance
+    limit: 10
+    orderby: null
+    resource_id: resource_id
+  context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 10
+    times: 100
+    type: constant
+
+CeilometerAlarms.create_and_update_alarm:
+- args:
+    alarm_actions:
+    - http://localhost:8776/alarm
+    insufficient_data_actions:
+    - http://localhost:8776/notok
+    meter_name: ram_util
+    ok_actions:
+    - http://localhost:8776/ok
+    statistic: avg
+    threshold: 10.0
+    type: threshold
+  context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+CeilometerStats.create_meter_and_get_stats:
+- args:
+    counter_type: cumulative
+    counter_unit: ''
+    counter_volume: 1.0
+    resource_id: resource-id
+    user_id: user-id
+  context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 5
+    times: 200
+    type: constant
+
+CeilometerEvents.create_user_and_get_event:
+- context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 10
+    times: 10
+    type: constant
+
+CeilometerEvents.create_user_and_list_event_types:
+- context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 10
+    times: 10
+    type: constant
+
+CeilometerEvents.create_user_and_list_events:
+- context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 10
+    times: 10
+    type: constant
+
+CeilometerTraits.create_user_and_list_trait_descriptions:
+- context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 10
+    times: 10
+    type: constant
+
+CeilometerTraits.create_user_and_list_traits:
+- context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 10
+    times: 10
+    type: constant
+
+CeilometerStats.get_stats:
+- args:
+    filter_by_project_id: true
+    filter_by_resource_id: true
+    filter_by_user_id: true
+    groupby: resource_id
+    metadata_query:
+      status: terminated
+    meter_name: benchmark_meter
+    period: 300
+  context:
+    ceilometer:
+      counter_name: benchmark_meter
+      counter_type: gauge
+      counter_unit: '%'
+      counter_volume: 100
+      metadata_list:
+      - deleted: 'false'
+        name: rally benchmark on
+        status: active
+      - deleted: 'true'
+        name: rally benchmark off
+        status: terminated
+      resources_per_tenant: 100
+      samples_per_resource: 100
+      timestamp_interval: 10
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+CeilometerResource.get_tenant_resources:
+- context:
+    ceilometer:
+      counter_name: cpu_util
+      counter_type: gauge
+      counter_unit: instance
+      counter_volume: 1.0
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 5
+    times: 10
+    type: constant
+
+CeilometerAlarms.list_alarms:
+- context:
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+CeilometerSamples.list_matched_samples:
+- args:
+    filter_by_project_id: true
+    filter_by_resource_id: true
+    filter_by_user_id: true
+    limit: 50
+    metadata_query:
+      status: not_active
+  context:
+    ceilometer:
+      counter_name: cpu_util
+      counter_type: gauge
+      counter_unit: instance
+      counter_volume: 1.0
+      metadata_list:
+      - created_at: '2015-09-04T12:34:19.000000'
+        deleted: 'False'
+        name: fake_resource
+        status: active
+      - created_at: '2015-09-10T06:55:12.000000'
+        deleted: 'False'
+        name: fake_resource_1
+        status: not_active
+      resources_per_tenant: 100
+      samples_per_resource: 100
+      timestamp_interval: 60
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 2
+    times: 10
+    type: constant
+
+CeilometerMeters.list_matched_meters:
+- args:
+    filter_by_project_id: true
+    filter_by_resource_id: true
+    filter_by_user_id: true
+    limit: 50
+    metadata_query:
+      status: terminated
+  context:
+    ceilometer:
+      counter_name: benchmark_meter
+      counter_type: gauge
+      counter_unit: '%'
+      counter_volume: 100
+      metadata_list:
+      - deleted: 'false'
+        name: rally benchmark on
+        status: active
+      - deleted: 'true'
+        name: rally benchmark off
+        status: terminated
+      resources_per_tenant: 100
+      samples_per_resource: 100
+      timestamp_interval: 10
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+CeilometerResource.list_matched_resources:
+- args:
+    filter_by_project_id: true
+    filter_by_user_id: true
+    limit: 50
+    metadata_query:
+      status: terminated
+  context:
+    ceilometer:
+      counter_name: benchmark_meter
+      counter_type: gauge
+      counter_unit: '%'
+      counter_volume: 100
+      metadata_list:
+      - deleted: 'false'
+        name: rally benchmark on
+        status: active
+      - deleted: 'true'
+        name: rally benchmark off
+        status: terminated
+      resources_per_tenant: 100
+      samples_per_resource: 100
+      timestamp_interval: 10
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+CeilometerSamples.list_samples:
+- args:
+    limit: 50
+    metadata_query:
+      status: not_active
+  context:
+    ceilometer:
+      batch_size: 5
+      counter_name: cpu_util
+      counter_type: gauge
+      counter_unit: instance
+      counter_volume: 1.0
+      metadata_list:
+      - created_at: '2015-09-04T12:34:19.000000'
+        deleted: 'False'
+        name: fake_resource
+        status: active
+      - created_at: '2015-09-10T06:55:12.000000'
+        deleted: 'False'
+        name: fake_resource_1
+        status: not_active
+      resources_per_tenant: 100
+      samples_per_resource: 100
+      timestamp_interval: 60
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 2
+    times: 10
+    type: constant
+

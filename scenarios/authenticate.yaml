@@ -1,0 +1,58 @@
+Authenticate.keystone:
+- context:
+    users:
+      tenants: 3
+      users_per_tenant: 50
+  runner:
+    concurrency: 5
+    times: 100
+    type: constant
+
+Authenticate.validate_glance:
+- args:
+    repetitions: 2
+  context:
+    users:
+      tenants: 3
+      users_per_tenant: 5
+  runner:
+    concurrency: 5
+    times: 10
+    type: constant
+
+Authenticate.validate_nova:
+- args:
+    repetitions: 2
+  context:
+    users:
+      tenants: 3
+      users_per_tenant: 5
+  runner:
+    concurrency: 5
+    times: 10
+    type: constant
+
+Authenticate.validate_cinder:
+- args:
+    repetitions: 2
+  context:
+    users:
+      tenants: 3
+      users_per_tenant: 5
+  runner:
+    concurrency: 5
+    times: 10
+    type: constant
+
+Authenticate.validate_neutron:
+- args:
+    repetitions: 2
+  context:
+    users:
+      tenants: 3
+      users_per_tenant: 5
+  runner:
+    concurrency: 5
+    times: 10
+    type: constant
+

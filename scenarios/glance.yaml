@@ -1,0 +1,62 @@
+GlanceImages.create_and_delete_image:
+- args:
+    container_format: bare
+    disk_format: qcow2
+    image_location: '{{image_location}}'
+  context:
+    users:
+      tenants: 2
+      users_per_tenant: 3
+  runner:
+    concurrency: 2
+    times: 10
+    type: constant
+
+GlanceImages.create_and_list_image:
+- args:
+    container_format: bare
+    disk_format: qcow2
+    image_location: '{{image_location}}'
+  context:
+    users:
+      tenants: 1
+      users_per_tenant: 1
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+
+GlanceImages.create_image_and_boot_instances:
+- args:
+    container_format: bare
+    disk_format: qcow2
+    flavor:
+      name: '{{flavor_name}}'
+    image_location: '{{image_location}}'
+    nics:
+    - net-id: '{{network_id}}'
+    number_instances: 2
+  context:
+    users:
+      tenants: 3
+      users_per_tenant: 5
+  runner:
+    concurrency: 2
+    times: 10
+    type: constant
+
+GlanceImages.list_images:
+- context:
+    images:
+      image_container: bare
+      image_type: qcow2
+      image_url: '{{image_location}}'
+      images_per_tenant: 4
+    users:
+      tenants: 2
+      users_per_tenant: 2
+  runner:
+    concurrency: 1
+    times: 10
+    type: constant
+

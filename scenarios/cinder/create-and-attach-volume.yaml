@@ -13,8 +13,8 @@
             availability_zone: "{{availability_zone}}"
       runner:
         type: "constant"
-        times: 5
-        concurrency: 1
+        times: 100
+        concurrency: 10
       context:
         users:
           tenants: 2
@@ -34,8 +34,8 @@
             availability_zone: "{{availability_zone}}"
       runner:
         type: "constant"
-        times: 5
-        concurrency: 1
+        times: 100
+        concurrency: 10
       context:
         users:
           tenants: 2
