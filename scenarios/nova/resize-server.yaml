@@ -14,7 +14,7 @@
         force_delete: false
       runner:
         type: "constant"
-        times: 10
+        times: 3
         concurrency: 5
       context:
         users:

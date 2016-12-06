@@ -6,7 +6,7 @@
         rules_per_security_group: 10
       runner:
         type: "constant"
-        times: 10
+        times: 3
         concurrency: 2
       context:
         users:

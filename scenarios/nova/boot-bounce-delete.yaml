@@ -20,7 +20,7 @@
             rescue_unrescue: 1
       runner:
         type: "constant"
-        times: 10
+        times: 3
         concurrency: 2
       context:
         users:
