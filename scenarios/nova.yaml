@@ -7,7 +7,7 @@ NovaFlavors.list_flavors:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaHypervisors.list_hypervisors:
@@ -15,7 +15,7 @@ NovaHypervisors.list_hypervisors:
     detailed: true
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaImages.list_images:
@@ -27,7 +27,7 @@ NovaImages.list_images:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.list_servers:
@@ -66,7 +66,7 @@ NovaServers.boot_and_delete_server:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaKeypair.create_and_list_keypairs:
@@ -76,7 +76,7 @@ NovaKeypair.create_and_list_keypairs:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaKeypair.create_and_delete_keypair:
@@ -86,7 +86,7 @@ NovaKeypair.create_and_delete_keypair:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaSecGroup.create_and_list_secgroups:
@@ -99,7 +99,7 @@ NovaSecGroup.create_and_list_secgroups:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaSecGroup.create_and_delete_secgroups:
@@ -112,7 +112,7 @@ NovaSecGroup.create_and_delete_secgroups:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaSecGroup.create_and_update_secgroups:
@@ -124,7 +124,7 @@ NovaSecGroup.create_and_update_secgroups:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.boot_server:
@@ -141,7 +141,7 @@ NovaServers.boot_server:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.boot_and_delete_multiple_servers:
@@ -199,7 +199,7 @@ NovaSecGroup.boot_and_delete_server_with_secgroups:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.boot_and_bounce_server:
@@ -222,7 +222,7 @@ NovaServers.boot_and_bounce_server:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.boot_and_get_console_output:
@@ -312,7 +312,7 @@ NovaServers.boot_server_from_volume_and_delete:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.boot_server_from_volume:
@@ -330,7 +330,7 @@ NovaServers.boot_server_from_volume:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.pause_and_unpause_server:
@@ -348,7 +348,7 @@ NovaServers.pause_and_unpause_server:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.shelve_and_unshelve_server:
@@ -366,7 +366,7 @@ NovaServers.shelve_and_unshelve_server:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.suspend_and_resume_server:
@@ -384,7 +384,7 @@ NovaServers.suspend_and_resume_server:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.boot_lock_unlock_and_delete:
@@ -401,7 +401,7 @@ NovaServers.boot_lock_unlock_and_delete:
       users_per_tenant: 1
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.snapshot_server:
@@ -419,7 +419,7 @@ NovaServers.snapshot_server:
       users_per_tenant: 2
   runner:
     concurrency: 2
-    times: 10
+    times: 3
     type: constant
 
 NovaServers.boot_and_associate_floating_ip:
