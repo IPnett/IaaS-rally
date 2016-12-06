@@ -9,7 +9,7 @@ GlanceImages.create_and_delete_image:
       users_per_tenant: 3
   runner:
     concurrency: 2
-    times: 5
+    times: 3
     type: constant
 
 GlanceImages.create_and_list_image:
@@ -23,7 +23,7 @@ GlanceImages.create_and_list_image:
       users_per_tenant: 1
   runner:
     concurrency: 1
-    times: 5
+    times: 3
     type: constant
 
 GlanceImages.create_image_and_boot_instances:
@@ -42,7 +42,7 @@ GlanceImages.create_image_and_boot_instances:
       users_per_tenant: 5
   runner:
     concurrency: 2
-    times: 5
+    times: 3
     type: constant
 
 GlanceImages.list_images:
@@ -57,6 +57,6 @@ GlanceImages.list_images:
       users_per_tenant: 2
   runner:
     concurrency: 1
-    times: 5
+    times: 3
     type: constant
 
