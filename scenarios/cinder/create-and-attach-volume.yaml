@@ -13,7 +13,7 @@
             availability_zone: "{{availability_zone}}"
       runner:
         type: "constant"
-        times: 100
+        times: 10
         concurrency: 10
       context:
         users:
@@ -34,7 +34,7 @@
             availability_zone: "{{availability_zone}}"
       runner:
         type: "constant"
-        times: 100
+        times: 10
         concurrency: 10
       context:
         users:

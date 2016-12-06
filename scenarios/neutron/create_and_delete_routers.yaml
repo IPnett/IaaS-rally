@@ -9,7 +9,7 @@
         router_create_args: {}
       runner:
         type: "constant"
-        times: 30
+        times: 10
         concurrency: 1
       context:
         network: {}

@@ -12,7 +12,7 @@
             name: "_router_updated"
       runner:
         type: "constant"
-        times: 10
+        times: 3
         concurrency: 1
       context:
         network: {}

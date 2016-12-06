@@ -142,7 +142,7 @@ NeutronNetworks.create_and_list_routers:
       users_per_tenant: 1
   runner:
     concurrency: 1
-    times: 5
+    times: 10
     type: constant
 
 NeutronSecurityGroup.create_and_list_security_groups:
@@ -173,11 +173,11 @@ NeutronNetworks.create_and_list_subnets:
         network: -1
         subnet: -1
     users:
-      tenants: 1
-      users_per_tenant: 1
+      tenants: 2
+      users_per_tenant: 3
   runner:
-    concurrency: 1
-    times: 5
+    concurrency: 5
+    times: 3
     type: constant
 
 NeutronNetworks.create_and_update_networks:
@@ -195,7 +195,7 @@ NeutronNetworks.create_and_update_networks:
       users_per_tenant: 3
   runner:
     concurrency: 5
-    times: 10
+    times: 3
     type: constant
 
 NeutronNetworks.create_and_update_routers:
@@ -220,7 +220,7 @@ NeutronNetworks.create_and_update_routers:
       users_per_tenant: 1
   runner:
     concurrency: 1
-    times: 5
+    times: 3
     type: constant
 
 NeutronSecurityGroup.create_and_update_security_groups:
@@ -235,8 +235,8 @@ NeutronSecurityGroup.create_and_update_security_groups:
       tenants: 3
       users_per_tenant: 3
   runner:
-    concurrency: 5
-    times: 5
+    concurrency: 10
+    times: 10
     type: constant
 
 NeutronNetworks.create_and_update_subnets:
@@ -259,6 +259,6 @@ NeutronNetworks.create_and_update_subnets:
       users_per_tenant: 3
   runner:
     concurrency: 5
-    times: 5
+    times: 3
     type: constant
 

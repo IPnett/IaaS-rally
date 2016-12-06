@@ -6,7 +6,7 @@
         floating_ip_args: {}
       runner:
         type: "constant"
-        times: 10
+        times: 3
         concurrency: 5
       context:
         users:

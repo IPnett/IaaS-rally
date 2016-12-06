@@ -5,7 +5,7 @@
         vip_create_args: {}
       runner:
         type: "constant"
-        times: 100
+        times: 10
         concurrency: 10
       context:
         users:

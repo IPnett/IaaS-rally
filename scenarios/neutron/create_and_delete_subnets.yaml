@@ -8,7 +8,7 @@
         subnets_per_network: 2
       runner:
         type: "constant"
-        times: 100
+        times: 10
         concurrency: 1
       context:
         network: {}

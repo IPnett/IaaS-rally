@@ -283,6 +283,6 @@ CinderVolumes.modify_volume_metadata:
       size: 1
   runner:
     concurrency: 2
-    times: 10
+    times: 5
     type: constant
 
