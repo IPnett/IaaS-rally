@@ -15,7 +15,7 @@ CinderVolumes.create_and_attach_volume:
       users_per_tenant: 2
   runner:
     concurrency: 10
-    times: 100
+    times: 10
     type: constant
 - args:
     create_volume_params:
@@ -35,7 +35,7 @@ CinderVolumes.create_and_attach_volume:
       users_per_tenant: 2
   runner:
     concurrency: 10
-    times: 100
+    times: 10
     type: constant
 
 CinderVolumes.create_and_delete_snapshot:
@@ -270,7 +270,7 @@ CinderVolumes.list_volumes:
       volumes_per_tenant: 4
   runner:
     concurrency: 1
-    times: 100
+    times: 10
     type: constant
 
 CinderVolumes.modify_volume_metadata:
