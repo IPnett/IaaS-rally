@@ -10,7 +10,7 @@ NeutronNetworks.create_and_delete_networks:
       users_per_tenant: 3
   runner:
     concurrency: 10
-    times: 100
+    times: 10
     type: constant
 
 NeutronNetworks.create_and_delete_ports:
@@ -29,7 +29,7 @@ NeutronNetworks.create_and_delete_ports:
       users_per_tenant: 3
   runner:
     concurrency: 10
-    times: 100
+    times: 10
     type: constant
 
 NeutronNetworks.create_and_delete_routers:
@@ -51,7 +51,7 @@ NeutronNetworks.create_and_delete_routers:
       users_per_tenant: 2
   runner:
     concurrency: 1
-    times: 30
+    times: 10
     type: constant
 
 NeutronSecurityGroup.create_and_delete_security_groups:
@@ -66,7 +66,7 @@ NeutronSecurityGroup.create_and_delete_security_groups:
       users_per_tenant: 3
   runner:
     concurrency: 10
-    times: 100
+    times: 10
     type: constant
 
 NeutronNetworks.create_and_delete_subnets:
@@ -86,7 +86,7 @@ NeutronNetworks.create_and_delete_subnets:
       users_per_tenant: 1
   runner:
     concurrency: 1
-    times: 100
+    times: 10
     type: constant
 
 NeutronNetworks.create_and_list_networks:
@@ -101,7 +101,7 @@ NeutronNetworks.create_and_list_networks:
       users_per_tenant: 3
   runner:
     concurrency: 10
-    times: 100
+    times: 10
     type: constant
 
 NeutronNetworks.create_and_list_ports:
@@ -142,7 +142,7 @@ NeutronNetworks.create_and_list_routers:
       users_per_tenant: 1
   runner:
     concurrency: 1
-    times: 100
+    times: 5
     type: constant
 
 NeutronSecurityGroup.create_and_list_security_groups:
@@ -157,7 +157,7 @@ NeutronSecurityGroup.create_and_list_security_groups:
       users_per_tenant: 3
   runner:
     concurrency: 10
-    times: 100
+    times: 10
     type: constant
 
 NeutronNetworks.create_and_list_subnets:
@@ -177,7 +177,7 @@ NeutronNetworks.create_and_list_subnets:
       users_per_tenant: 1
   runner:
     concurrency: 1
-    times: 10
+    times: 5
     type: constant
 
 NeutronNetworks.create_and_update_networks:
@@ -220,7 +220,7 @@ NeutronNetworks.create_and_update_routers:
       users_per_tenant: 1
   runner:
     concurrency: 1
-    times: 10
+    times: 5
     type: constant
 
 NeutronSecurityGroup.create_and_update_security_groups:
@@ -235,8 +235,8 @@ NeutronSecurityGroup.create_and_update_security_groups:
       tenants: 3
       users_per_tenant: 3
   runner:
-    concurrency: 10
-    times: 100
+    concurrency: 5
+    times: 5
     type: constant
 
 NeutronNetworks.create_and_update_subnets:
@@ -259,6 +259,6 @@ NeutronNetworks.create_and_update_subnets:
       users_per_tenant: 3
   runner:
     concurrency: 5
-    times: 10
+    times: 5
     type: constant
 
